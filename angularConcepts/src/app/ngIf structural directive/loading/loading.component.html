@@ -1,0 +1,16 @@
+<div *ngIf="isLoading; else dataLoaded">
+  <p>Loading data... ⏳</p>
+</div>
+
+<!-- Template Reference -->
+<ng-template #dataLoaded>
+  <p>Data loaded successfully! ✅</p>
+</ng-template>
+
+
+<!-- @if (isLoading) {
+    <p>Loading data... ⏳</p>
+}
+@else{
+    <p>Data loaded successfully! ✅</p>
+} -->

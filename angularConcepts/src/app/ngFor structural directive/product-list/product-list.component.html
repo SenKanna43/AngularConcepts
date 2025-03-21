@@ -1,0 +1,15 @@
+<h3>Product List</h3>
+<ul>
+  <li *ngFor="let product of products">
+    <strong>{{ product.name }}</strong> - ₹{{ product.price }}
+  </li>
+</ul>
+
+<!-- <h3>Product List</h3>
+<ul>
+  @for (product of products; track product.id) {
+    <li>
+      <strong>{{ product.name }}</strong> - ₹{{ product.price }}
+    </li>
+  }
+</ul> -->
