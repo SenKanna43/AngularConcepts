@@ -7,6 +7,7 @@ import { ProductListComponent } from './ngFor structural directive/product-list/
 import { ProfileComponent } from './Attribute Directive/profile/profile.component';
 import { LoginComponent } from './Custom Directive/login/login.component';
 import { CartComponent } from './signals/cart/cart.component';
+import { UserFormComponent } from './Template Driven Form/user-form/user-form.component';
 
 export const routes: Routes = [
     { path: 'employee', component: EmployeeComponent},
@@ -16,6 +17,7 @@ export const routes: Routes = [
     { path: 'product', component: ProductListComponent },
     { path: 'profile', component: ProfileComponent },
     { path: 'login', component: LoginComponent },
-    { path: 'cart', component: CartComponent },
+    { path: 'cart', component: CartComponent }, 
+    { path: 'user-form', component: UserFormComponent},
     { path: '', redirectTo: 'employee', pathMatch: 'full' } // Default route
   ];
