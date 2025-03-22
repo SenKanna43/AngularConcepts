@@ -17,5 +17,5 @@ export const routes: Routes = [
     { path: 'profile', component: ProfileComponent },
     { path: 'login', component: LoginComponent },
     { path: 'cart', component: CartComponent },
-    { path: '', redirectTo: 'toggle', pathMatch: 'full' } // Default route
+    { path: '', redirectTo: 'employee', pathMatch: 'full' } // Default route
   ];
