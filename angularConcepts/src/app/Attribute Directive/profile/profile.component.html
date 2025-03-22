@@ -1,0 +1,23 @@
+<h2>User Profile Settings</h2>
+
+<!-- User Profile Card -->
+<div class="profile-card" [ngClass]="{ 'dark-mode': isDarkMode, 'light-mode': !isDarkMode }"
+    [ngStyle]="{ 'background-color': cardColor, 'color': textColor }">
+    <h3>Welcome, {{ userName }}</h3>
+    <p>Customize your profile settings below.</p>
+</div>
+
+<!-- Name Input (Two-way Binding using ngModel) -->
+<label>Update Name:</label>
+<input type="text" [(ngModel)]="userName" placeholder="Enter your name" class="form-control w-25" />
+
+<!-- Theme Toggle Button -->
+<button (click)="toggleTheme()">Toggle {{ isDarkMode ? 'Light' : 'Dark' }} Mode</button>
+
+<!-- Attribute Directive Types  -->
+
+<!-- 
+[ngClass] - applies multiple classes 
+[ngStyle] - applies inline styles
+[(ngModel)] - two way data binding 
+-->
