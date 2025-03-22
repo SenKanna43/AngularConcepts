@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { CartComponent } from "./signals/cart/cart.component";
+import { RouterOutlet } from '@angular/router';
+import { SidebarComponent } from './sidebar/sidebar/sidebar.component';
 
 @Component({
   selector: 'app-root',
-  imports: [CartComponent],
+  imports: [RouterOutlet, SidebarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
