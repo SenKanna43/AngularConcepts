@@ -9,26 +9,22 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
   styleUrl: './user-form.component.css'
 })
 export class UserFormReactiveComponent {
-  userForm: FormGroup;
-  submitted = false;
 
-  constructor(private fb: FormBuilder) {
-    this.userForm = this.fb.group({
-      name: ['', Validators.required],
-      email: ['', [Validators.required, Validators.email]],
-      age: ['', [Validators.required, Validators.min(18), Validators.max(60)]],
-      password: ['', [Validators.required, Validators.minLength(6)]]
-    });
-  }
+    myForm: FormGroup;
 
-  get f() {
-    return this.userForm.controls; // Shortcut to access form controls
-  }
-
-  onSubmit() {
-    this.submitted = true;
-    if (this.userForm.valid) {
-      console.log('Form Data:', this.userForm.value);
+    constructor(private fb: FormBuilder) {
+      this.myForm = this.fb.group({
+        name: ['', [Validators.required, Validators.minLength(3)]],
+        email: ['', [Validators.required, Validators.email]],
+        password: ['', [Validators.required, Validators.minLength(6)]]
+      });
     }
-  }
+  
+    onSubmit() {
+      if (this.myForm.invalid) {
+        this.myForm.markAllAsTouched();
+        return;
+      }
+      console.log(this.myForm.value);
+    }
 }

@@ -30,3 +30,10 @@
     width: 100%;
   }
   
+  .head{
+    overflow: hidden;
+  }
+
+  .head2{
+    overflow: hidden;
+  }
