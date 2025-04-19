@@ -9,9 +9,11 @@ import { LoginComponent } from './Custom Directive/login/login.component';
 import { CartComponent } from './signals/cart/cart.component';
 import { UserFormComponent } from './Template Driven Form/user-form/user-form.component';
 import { UserFormReactiveComponent } from './Reactive Form/user-form/user-form.component';
+import { ButtonComponent } from './Property Binding/button/button.component';
 
 export const routes: Routes = [
     { path: 'employee', component: EmployeeComponent},
+    { path: 'button', component: ButtonComponent},
     { path: 'toggle', component: ToggleComponent },
     { path: 'user', component: UserComponent },
     { path: 'loading', component: LoadingComponent },

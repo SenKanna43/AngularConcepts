@@ -8,5 +8,5 @@ import {FormsModule} from '@angular/forms'
   styleUrl: './user.component.css'
 })
 export class UserComponent {
-  username = 'JohnDoe'; // Initial value
+  username = 'Dhoni'; // Initial value
 }

@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './toggle.component.css'
 })
 export class ToggleComponent {
-  messageVisible = false;
+  messageVisible : boolean = false;
 
   toggleMessage() {
     this.messageVisible = !this.messageVisible; // Toggle the message visibility
